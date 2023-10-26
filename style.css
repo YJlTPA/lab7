@@ -1,0 +1,170 @@
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 200px;
+    height: 200px;
+    z-index: 100;
+  }
+  .notification__content {
+    display: flex;
+    align-items: center;
+  }
+  .notification__content > span {
+    margin-right: 10px;
+  }
+  .notification__close {
+    border: none;
+    background-color: transparent;
+    color: #1C2833;
+    cursor: pointer;
+  }
+  .notification__close:hover {
+    color: #34515e;
+  }/*# sourceMappingURL=style.css.map */
+
+  .navigation {
+    display: none;
+    position: relative;
+  }
+  @media screen and (min-width: 1200px) {
+    .navigation {
+      display: block;
+      margin-left: 100px;
+    }
+  }
+  .navigation__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    .navigation__list {
+      align-items: center;
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
+  .navigation__link {
+    font-family: "poppins-400";
+    font-size: 18px;
+    line-height: 24px;
+    color: #050709;
+    text-decoration: none;
+  }
+
+
+  .burger {
+    background-color: transparent;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: none;
+    vertical-align: middle;
+    color: #000000;
+  }
+  @media screen and (min-width: 1200px) {
+    .burger {
+      display: none;
+    }
+  }
+  
+  .line {
+    transition: 0.5s;
+  }
+  
+  .header__burger {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .header__burger.is-active .line2 {
+    transform-origin: center center;
+    animation: line2 0.5s ease forwards;
+  }
+  
+  .header__burger.is-active .line3 {
+    transform-origin: center center;
+    animation: line3 0.5s ease forwards;
+  }
+  
+  .header__burger.is-active .line4 {
+    animation: line-opacity 0.3s ease forwards;
+  }
+  
+  .header__burger.is-active .line1 {
+    animation: line-opacity 0.3s ease forwards;
+  }
+  
+  .header__burger:not(.is-active) .line2 {
+    transform-origin: center center;
+    animation: line2-not 0.5s ease forwards;
+  }
+  
+  .header__burger:not(.is-active) .line3 {
+    transform-origin: center center;
+    animation: line3-not 0.5s ease forwards;
+  }
+  
+  .header__burger:not(.is-active) .line4 {
+    animation: line-opacity-not 0.3s ease forwards;
+  }
+  
+  .header__burger:not(.is-active) .line1 {
+    animation: line-opacity-not 0.3s ease forwards;
+  }
+  
+  @keyframes line-opacity {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes line2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-45deg);
+    }
+  }
+  @keyframes line3 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(45deg);
+    }
+  }
+  @keyframes line-opacity-not {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes line2-not {
+    from {
+      transform: rotate(-45deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes line3-not {
+    from {
+      transform: rotate(45deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
