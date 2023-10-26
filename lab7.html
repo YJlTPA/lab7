@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Брыль-Разумовский Григорий - Лабораторная работа #7</title>
+</head>
+
+<body>
+    <div class="header__wrapper">
+        <div class="header__links">
+            <div class="header__top">
+                <button class="header__burger burger" aria-label="burger">
+                    <svg class="burger__image" fill="currentColor" viewBox="0 0 24 24" height="24" width="24">
+                        <line class="line line1" y1="4" x2="24" y2="4" stroke="currentColor" stroke-width="4" />
+                        <line class="line line2" y1="12" x2="24" y2="12" stroke="currentColor" stroke-width="4" />
+                        <line class="line line3" y1="12" x2="24" y2="12" stroke="currentColor" stroke-width="4" />
+                        <line class="line line4" y1="20" x2="24" y2="20" stroke="currentColor" stroke-width="4" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="header__navigation navigation" role="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link" href="">Home</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="">About us</a></li>
+                    <li class="navigation__item navigation__item--login"><a
+                            class="navigation__link navigation__link--login" href="">Login</a></li>
+                    <li class="navigation__item navigation__item--signup"><a
+                            class="navigation__link navigation__link--signup" href="">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <h1>Брыль-Разумовский Григорий - Лабораторная работа №7</h1>
+    <div class="notification" id="notification-container">
+        <div class="notification__content" id="notification-content">
+            <span class="notification__name" id="notification-name"></span>
+            <span class="notification__message" id="notification-message"></span>
+            <button class="notification__close" id="close-button">Close</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="/lab7.js"></script>
+    <script type="text/javascript" src="/notification.js"></script>
+    <script type="text/javascript" src="/burger-menu.js"></script>
+</body>
+
+</html>
